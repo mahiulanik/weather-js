@@ -1,4 +1,4 @@
-import API_KEY from "./config";
+import API_KEY from "./config.js";
 const startButton = document.querySelector("#start-button");
 const homeButton = document.querySelector("#home-button");
 const search = document.querySelector("#inputfield");
