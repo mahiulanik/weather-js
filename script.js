@@ -1,3 +1,4 @@
+import API_KEY from "./config";
 const startButton = document.querySelector("#start-button");
 const homeButton = document.querySelector("#home-button");
 const search = document.querySelector("#inputfield");
@@ -30,7 +31,7 @@ const changeIcon = (weatherIcon) => {
 };
 
 const url = "https://api.openweathermap.org/data/2.5/weather?";
-const apiKey = "5cb2322d7b1dc7a77cafcff136d0a530";
+const apiKey = API_KEY;
 
 async function getWeatherData(city) {
   let finalUrl = `${url}q=${city}&appid=${apiKey}&units=metric`;
