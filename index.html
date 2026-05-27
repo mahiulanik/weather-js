@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mainBox mainBox1">
+      <img src="images/drizzle.png" alt="" />
+      <h1 id="weather">Weather</h1>
+      <h2 id="forecasts">Forecasts</h2>
+      <button id="start-button">Get Start</button>
+    </div>
+    <div class="mainBox mainBox2 inactive">
+      <div class="searchBox">
+        <input type="text" placeholder="Enter Your City" id="inputfield" />
+        <img src="images/search.png" alt="" id="searchIcon" />
+      </div>
+      <div class="iconBox">
+        <img src="images/clear.png" alt="" id="icon" />
+        <p id="desc">Description</p>
+      </div>
+      <div class="tempBox">
+        <h1 id="temp">0°c</h1>
+        <h3 id="city">Your City</h3>
+      </div>
+      <div class="extraDetails">
+        <div class="wind">
+          <img src="images/wind.png" id="windIcon" />
+          <div class="windData">
+            <p id="windSpeed">0km/h</p>
+            <p>wind</p>
+          </div>
+        </div>
+        <div class="humidity">
+          <img src="images/humidity.png" id="humidityIcon" />
+          <div class="humidityData">
+            <p id="humidityper">0%</p>
+            <p>humidity</p>
+          </div>
+        </div>
+      </div>
+      <div class="forecastSection">
+        <h3>24 Hour Forecast</h3>
+
+        <div class="forecastContainer" id="forecastContainer">
+          <!-- Forecast cards will come here dynamically -->
+        </div>
+      </div>
+    </div>
+    <div class="mainBox mainBox3 inactive">
+      <h1>404</h1>
+      <p>Oops! Page Not Found</p>
+      <p id="info">The page you're looking for does not exist</p>
+      <button id="home-button">Go Home</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
