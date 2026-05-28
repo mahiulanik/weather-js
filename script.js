@@ -49,6 +49,8 @@ async function getWeatherData(city) {
     humidity.innerHTML = "0%";
     search.value = "";
     icon.src = "/images/clear.png";
+
+    return;
   }
 
   desc.innerHTML = data.weather[0].main;
